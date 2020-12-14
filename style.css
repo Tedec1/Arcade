@@ -1,0 +1,36 @@
+* > {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: column;
+    justify-items: stretch;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+}
+img{
+    width: 300px;
+    border: 1px solid black;
+}
+header{
+    height: 50px;
+    width: 90%;
+    text-align: center;
+    font-family: 'WebFont', Arial, sans-serif;
+    font-size: 40px;
+    letter-spacing: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+main{
+    max-width: 75%;
+    display: grid;
+    margin-top: 20px;
+    grid-template: 1fr 1fr/1fr 1fr;
+    grid-gap: 20px;
+}
