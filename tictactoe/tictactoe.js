@@ -164,9 +164,11 @@ $('.cell').click(function(){
 function computerTurn(){
     for (let i = 0; i < 3; i++) {
         for(let j = 0; j < 3;j++){
-            if(isWin(i,j)){
-                gameOver();
-                return 0;
+            if(gameState.board[i][j] === null){
+                if(isWin(i,j)){
+                    gameOver();
+                    return 0;
+                }
             }
         }
     }
